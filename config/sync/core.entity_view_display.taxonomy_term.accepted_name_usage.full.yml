@@ -1,0 +1,25 @@
+uuid: e4d1ceb6-28e0-410f-9267-ad768c4d155a
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.full
+    - field.field.taxonomy_term.accepted_name_usage.field_itis_gov_nomenclature
+    - taxonomy.vocabulary.accepted_name_usage
+  module:
+    - text
+id: taxonomy_term.accepted_name_usage.full
+targetEntityType: taxonomy_term
+bundle: accepted_name_usage
+mode: full
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_itis_gov_nomenclature: true
+  langcode: true

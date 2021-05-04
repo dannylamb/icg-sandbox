@@ -1,0 +1,30 @@
+uuid: 8debc44d-7b78-430e-b740-6b6f36f6ffeb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_itis_gov_nomenclature
+    - taxonomy.vocabulary.accepted_name_usage
+  module:
+    - controlled_access_terms
+id: taxonomy_term.accepted_name_usage.field_itis_gov_nomenclature
+field_name: field_itis_gov_nomenclature
+entity_type: taxonomy_term
+bundle: accepted_name_usage
+label: 'ITIS.gov nomenclature'
+description: 'To find the accepted nomenclature for a taxonomic species, go to https://www.itis.gov/ to find the name. To obtain a JSON-formatted Solr search result for the species, use the ITIS Web Services page to determine the correct Solr search: https://www.itis.gov/solr_examples.html'
+required: true
+translatable: false
+default_value:
+  -
+    uri: 'https://www.itis.gov/'
+    title: 'Integrated Taxonomic Information System'
+    options: {  }
+    source: other
+default_value_callback: ''
+settings:
+  authority_sources:
+    other: Other
+  title: 1
+  link_type: 16
+field_type: authority_link

@@ -1,0 +1,55 @@
+uuid: 0adce908-2e12-4670-b52f-093ecf9309a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.scientific_name
+  module:
+    - context
+    - ctools
+    - facets
+    - islandora
+    - system
+  theme:
+    - solid
+id: scientificname
+theme: solid
+region: sidebar
+weight: 0
+provider: null
+plugin: 'facet_block:scientific_name'
+settings:
+  id: 'facet_block:scientific_name'
+  label: 'Scientific name'
+  provider: facets
+  label_display: visible
+  block_id: scientificname
+visibility:
+  view_inclusion:
+    id: view_inclusion
+    negate: null
+    view_inclusion:
+      view-content-page_1: view-content-page_1
+    context_mapping: {  }
+  request_path_exclusion:
+    id: request_path_exclusion
+    pages: ''
+    negate: null
+    context_mapping: {  }
+  'entity_bundle:taxonomy_term':
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      accepted_name_usage: accepted_name_usage
+    negate: false
+    context_mapping:
+      taxonomy_term: '@islandora.taxonomy_term_route_context_provider:taxonomy_term'
+  media_source_mimetype:
+    id: media_source_mimetype
+    mimetype: ''
+    negate: false
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: /search
+    negate: false
+    context_mapping: {  }

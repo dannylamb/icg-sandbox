@@ -1,0 +1,23 @@
+uuid: 97068440-162d-42b4-96eb-f099308ff79a
+langcode: en
+status: true
+dependencies:
+  module:
+    - controlled_access_terms
+    - field_permissions
+    - taxonomy
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: taxonomy_term.field_itis_gov_nomenclature
+field_name: field_itis_gov_nomenclature
+entity_type: taxonomy_term
+type: authority_link
+settings: {  }
+module: controlled_access_terms
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,29 @@
+uuid: 22276075-bdf5-4c3f-aa48-346d7c5b1990
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_scientific_name
+    - node.type.islandora_object
+    - taxonomy.vocabulary.accepted_name_usage
+id: node.islandora_object.field_scientific_name
+field_name: field_scientific_name
+entity_type: node
+bundle: islandora_object
+label: 'Scientific name'
+description: 'To determine the correct scientific name for this entity, search at https://www.itis.gov/. To obtain a link to  JSON-formatted search results, use the ITIS Web services here, https://www.itis.gov/solr_examples.html'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      accepted_name_usage: accepted_name_usage
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

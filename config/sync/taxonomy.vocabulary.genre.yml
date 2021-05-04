@@ -1,0 +1,8 @@
+uuid: a6077bf3-a171-4f98-8980-5363f3cd7116
+langcode: en
+status: true
+dependencies: {  }
+name: Genre
+vid: genre
+description: ' term or phrase that indicates the style, form, or content of the resource rather than the resource itself.'
+weight: 0

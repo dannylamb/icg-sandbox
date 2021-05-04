@@ -1,0 +1,8 @@
+uuid: d981e557-951a-4e65-a55d-f0eb0a5a6a9b
+langcode: en
+status: true
+dependencies: {  }
+name: 'Accepted Scientific name'
+vid: accepted_name_usage
+description: 'Integrated Taxonomic Information System nomeclature - https://www.itis.gov/'
+weight: 0
